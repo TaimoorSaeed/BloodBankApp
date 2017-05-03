@@ -14,6 +14,7 @@
 		843B30771EAA1FFE00943F73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843B30751EAA1FFE00943F73 /* LaunchScreen.storyboard */; };
 		843B30821EAA1FFE00943F73 /* BloodBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B30811EAA1FFE00943F73 /* BloodBankTests.swift */; };
 		843B308D1EAA1FFE00943F73 /* BloodBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B308C1EAA1FFE00943F73 /* BloodBankUITests.swift */; };
+		8451CC651EB8DA30005C071D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451CC641EB8DA30005C071D /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		843B30881EAA1FFE00943F73 /* BloodBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloodBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		843B308C1EAA1FFE00943F73 /* BloodBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodBankUITests.swift; sourceTree = "<group>"; };
 		843B308E1EAA1FFE00943F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8451CC641EB8DA30005C071D /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = ../AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				843B306C1EAA1FFD00943F73 /* AppDelegate.swift */,
+				8451CC641EB8DA30005C071D /* AuthService.swift */,
 				843B306E1EAA1FFD00943F73 /* ViewController.swift */,
 				843B30701EAA1FFE00943F73 /* Main.storyboard */,
 				843B30731EAA1FFE00943F73 /* Assets.xcassets */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8451CC651EB8DA30005C071D /* AuthService.swift in Sources */,
 				843B306F1EAA1FFD00943F73 /* ViewController.swift in Sources */,
 				843B306D1EAA1FFD00943F73 /* AppDelegate.swift in Sources */,
 			);
@@ -507,6 +511,7 @@
 				843B30931EAA1FFE00943F73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		843B30941EAA1FFE00943F73 /* Build configuration list for PBXNativeTarget "BloodBankTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				843B30961EAA1FFE00943F73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		843B30971EAA1FFE00943F73 /* Build configuration list for PBXNativeTarget "BloodBankUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				843B30991EAA1FFE00943F73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

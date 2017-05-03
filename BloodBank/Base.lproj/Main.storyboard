@@ -53,6 +53,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="SignInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CdW-ag-g1f"/>
+                                </connections>
                             </button>
                             <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZi-zJ-K5g" userLabel="Divider">
                                 <rect key="frame" x="30" y="689" width="353" height="2"/>
@@ -101,6 +104,10 @@
                             <constraint firstItem="9vY-GS-ntc" firstAttribute="top" secondItem="GDz-t1-A76" secondAttribute="bottom" constant="18" id="y55-hQ-ADl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="EmailLabel" destination="GDz-t1-A76" id="mOM-8o-Sfe"/>
+                        <outlet property="PasswordLable" destination="9vY-GS-ntc" id="yrr-bd-ubw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
