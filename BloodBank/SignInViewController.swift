@@ -25,7 +25,7 @@ class SignInViewController: UIViewController {
         let email = EmailLabel.text
         let password = PasswordLable.text
         
-        let auth = AuthService.sharedInstance.login(username:email!, password:password!)
+        let auth = AuthService.sharedInstance.login(email:email!, password:password!)
         print(auth)
     }
     

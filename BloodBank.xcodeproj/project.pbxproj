@@ -16,6 +16,7 @@
 		843B308D1EAA1FFE00943F73 /* BloodBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B308C1EAA1FFE00943F73 /* BloodBankUITests.swift */; };
 		8451CC651EB8DA30005C071D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451CC641EB8DA30005C071D /* AuthService.swift */; };
 		8451CC6B1EB9BA0D005C071D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451CC6A1EB9BA0D005C071D /* SignUpViewController.swift */; };
+		8451CC6D1EBA098B005C071D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451CC6C1EBA098B005C071D /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		843B308E1EAA1FFE00943F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8451CC641EB8DA30005C071D /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = ../AuthService.swift; sourceTree = "<group>"; };
 		8451CC6A1EB9BA0D005C071D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
+		8451CC6C1EBA098B005C071D /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +105,11 @@
 			children = (
 				843B306C1EAA1FFD00943F73 /* AppDelegate.swift */,
 				8451CC641EB8DA30005C071D /* AuthService.swift */,
+				8451CC6C1EBA098B005C071D /* UserModel.swift */,
 				843B306E1EAA1FFD00943F73 /* SignInViewController.swift */,
+				8451CC6A1EB9BA0D005C071D /* SignUpViewController.swift */,
 				843B30701EAA1FFE00943F73 /* Main.storyboard */,
 				843B30731EAA1FFE00943F73 /* Assets.xcassets */,
-				8451CC6A1EB9BA0D005C071D /* SignUpViewController.swift */,
 				843B30751EAA1FFE00943F73 /* LaunchScreen.storyboard */,
 				843B30781EAA1FFE00943F73 /* Info.plist */,
 			);
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8451CC6D1EBA098B005C071D /* UserModel.swift in Sources */,
 				8451CC651EB8DA30005C071D /* AuthService.swift in Sources */,
 				843B306F1EAA1FFD00943F73 /* SignInViewController.swift in Sources */,
 				8451CC6B1EB9BA0D005C071D /* SignUpViewController.swift in Sources */,

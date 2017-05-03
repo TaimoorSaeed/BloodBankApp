@@ -53,17 +53,22 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     @IBAction func SignUpPressed(_ sender: Any) {
         
-        let name = NameLabel.text
+//        let name = NameLabel.text
         let email = EmailLabel.text
         let password = PasswordLabel.text
         let donor = Donor.isOn
         let acceptor = Acceptor.isOn
-        print(bloodgroup)
+    
+         let auth = AuthService.sharedInstance.register(email:email!, password:password!, donor: donor, acceptor: acceptor, bloodgroup: bloodgroup)
         
-         let auth = AuthService.sharedInstance.register(username:name!, email:email!, password:password!, donor: donor, acceptor: acceptor, bloodgroup: bloodgroup)
+//        print(auth)
+        if auth == "user added"
+        {
+             print(auth)
+           performSegue(withIdentifier: "SignInSegue", sender: self)
+           
+        }
         
-        
-        print(auth)
         
         
     }
