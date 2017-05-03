@@ -8,12 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SignInViewController: UIViewController {
     
     @IBOutlet weak var EmailLabel: UITextField!
-    
-
     @IBOutlet weak var PasswordLable: UITextField!
+    
     override func viewDidLoad() {
         
         
@@ -29,6 +28,13 @@ class ViewController: UIViewController {
         let auth = AuthService.sharedInstance.login(username:email!, password:password!)
         print(auth)
     }
+    
+    
+    
+    
+    
+    
+    
 
 }
 
