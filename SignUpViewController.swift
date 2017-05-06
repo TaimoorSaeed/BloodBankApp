@@ -10,18 +10,12 @@ import UIKit
 
 class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    @IBOutlet weak var NameLabel: UITextField!
-    
+   
     @IBOutlet weak var EmailLabel: UITextField!
-    
     @IBOutlet weak var PasswordLabel: UITextField!
-    
     @IBOutlet weak var Donor: UISwitch!
-    
     @IBOutlet weak var Acceptor: UISwitch!
-    
     @IBOutlet weak var PickerViewRowLabel: UILabel!
-    
     @IBOutlet weak var PickerView: UIPickerView!
     
     var bloodgroup : String = ""
@@ -30,7 +24,6 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         super.viewDidLoad()
         PickerView.dataSource = self
         PickerView.delegate = self
-        
     }
     
     let bloodgroups = ["A","B","AB", "O"]
@@ -48,25 +41,21 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-            bloodgroup =  bloodgroups[row]
+        bloodgroup =  bloodgroups[row]
     }
     
     @IBAction func SignUpPressed(_ sender: Any) {
-        
-//        let name = NameLabel.text
         let email = EmailLabel.text
         let password = PasswordLabel.text
         let donor = Donor.isOn
         let acceptor = Acceptor.isOn
-    
-         let auth = AuthService.sharedInstance.register(email:email!, password:password!, donor: donor, acceptor: acceptor, bloodgroup: bloodgroup)
         
-//        print(auth)
+        let auth = AuthService.sharedInstance.register(email:email!, password:password!, donor: donor, acceptor: acceptor, bloodgroup: bloodgroup)
+      
         if auth == "user added"
         {
-             print(auth)
-           performSegue(withIdentifier: "SignInSegue", sender: self)
-           
+            print(auth)
+            performSegue(withIdentifier: "SignInSegue", sender: self)
         }
         
         

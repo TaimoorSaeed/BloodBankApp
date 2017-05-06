@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		843B306D1EAA1FFD00943F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B306C1EAA1FFD00943F73 /* AppDelegate.swift */; };
 		843B306F1EAA1FFD00943F73 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B306E1EAA1FFD00943F73 /* SignInViewController.swift */; };
-		843B30721EAA1FFE00943F73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843B30701EAA1FFE00943F73 /* Main.storyboard */; };
 		843B30741EAA1FFE00943F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843B30731EAA1FFE00943F73 /* Assets.xcassets */; };
 		843B30771EAA1FFE00943F73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843B30751EAA1FFE00943F73 /* LaunchScreen.storyboard */; };
 		843B30821EAA1FFE00943F73 /* BloodBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B30811EAA1FFE00943F73 /* BloodBankTests.swift */; };
@@ -17,6 +16,9 @@
 		8451CC651EB8DA30005C071D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451CC641EB8DA30005C071D /* AuthService.swift */; };
 		8451CC6B1EB9BA0D005C071D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451CC6A1EB9BA0D005C071D /* SignUpViewController.swift */; };
 		8451CC6D1EBA098B005C071D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451CC6C1EBA098B005C071D /* UserModel.swift */; };
+		849A3B521EBDC2C7007C63F3 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A3B511EBDC2C7007C63F3 /* UserTableViewCell.swift */; };
+		84B60D0C1EBCBDC5001E5C27 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B60D0B1EBCBDC5001E5C27 /* TableViewController.swift */; };
+		84B60D0E1EBCC973001E5C27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B60D0D1EBCC973001E5C27 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 		843B30691EAA1FFD00943F73 /* BloodBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843B306C1EAA1FFD00943F73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		843B306E1EAA1FFD00943F73 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		843B30711EAA1FFE00943F73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		843B30731EAA1FFE00943F73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		843B30761EAA1FFE00943F73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843B30781EAA1FFE00943F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +54,9 @@
 		8451CC641EB8DA30005C071D /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = ../AuthService.swift; sourceTree = "<group>"; };
 		8451CC6A1EB9BA0D005C071D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
 		8451CC6C1EBA098B005C071D /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		849A3B511EBDC2C7007C63F3 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		84B60D0B1EBCBDC5001E5C27 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		84B60D0D1EBCC973001E5C27 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +112,9 @@
 				8451CC6C1EBA098B005C071D /* UserModel.swift */,
 				843B306E1EAA1FFD00943F73 /* SignInViewController.swift */,
 				8451CC6A1EB9BA0D005C071D /* SignUpViewController.swift */,
-				843B30701EAA1FFE00943F73 /* Main.storyboard */,
+				84B60D0D1EBCC973001E5C27 /* Main.storyboard */,
+				84B60D0B1EBCBDC5001E5C27 /* TableViewController.swift */,
+				849A3B511EBDC2C7007C63F3 /* UserTableViewCell.swift */,
 				843B30731EAA1FFE00943F73 /* Assets.xcassets */,
 				843B30751EAA1FFE00943F73 /* LaunchScreen.storyboard */,
 				843B30781EAA1FFE00943F73 /* Info.plist */,
@@ -241,9 +247,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B60D0E1EBCC973001E5C27 /* Main.storyboard in Resources */,
 				843B30771EAA1FFE00943F73 /* LaunchScreen.storyboard in Resources */,
 				843B30741EAA1FFE00943F73 /* Assets.xcassets in Resources */,
-				843B30721EAA1FFE00943F73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8451CC6D1EBA098B005C071D /* UserModel.swift in Sources */,
+				84B60D0C1EBCBDC5001E5C27 /* TableViewController.swift in Sources */,
+				849A3B521EBDC2C7007C63F3 /* UserTableViewCell.swift in Sources */,
 				8451CC651EB8DA30005C071D /* AuthService.swift in Sources */,
 				843B306F1EAA1FFD00943F73 /* SignInViewController.swift in Sources */,
 				8451CC6B1EB9BA0D005C071D /* SignUpViewController.swift in Sources */,
@@ -308,14 +316,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		843B30701EAA1FFE00943F73 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				843B30711EAA1FFE00943F73 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		843B30751EAA1FFE00943F73 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BloodBank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bloodbank.com.BloodBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BloodBank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bloodbank.com.BloodBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
