@@ -18,7 +18,6 @@ class TableViewController: UIViewController,UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -38,7 +37,4 @@ class TableViewController: UIViewController,UITableViewDataSource, UITableViewDe
         
         return cell
     }
-    
-    
-
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-   
+    
     @IBOutlet weak var EmailLabel: UITextField!
     @IBOutlet weak var PasswordLabel: UITextField!
     @IBOutlet weak var Donor: UISwitch!
@@ -51,7 +51,7 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         let acceptor = Acceptor.isOn
         
         let auth = AuthService.sharedInstance.register(email:email!, password:password!, donor: donor, acceptor: acceptor, bloodgroup: bloodgroup)
-      
+        
         if auth == "user added"
         {
             print(auth)

@@ -14,13 +14,11 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var PasswordLable: UITextField!
     
     override func viewDidLoad() {
-        
-        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-   
+    
+    
     @IBAction func SignInPressed(_ sender: Any) {
         let email = EmailLabel.text
         let password = PasswordLable.text
@@ -29,16 +27,7 @@ class SignInViewController: UIViewController {
         if (auth == "login sucessfull"){
             performSegue(withIdentifier:"tableviewsegue", sender: nil)
         }
-        
-        
     }
     
-    
-    
-    
-    
-    
-    
-
 }
 
