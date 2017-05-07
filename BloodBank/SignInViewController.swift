@@ -27,7 +27,7 @@ class SignInViewController: UIViewController {
         
         let auth = AuthService.sharedInstance.login(email:email!, password:password!)
         if (auth == "login sucessfull"){
-            performSegue(withIdentifier: "tableviewseg", sender: nil)
+            performSegue(withIdentifier:"tableviewsegue", sender: nil)
         }
         
         
