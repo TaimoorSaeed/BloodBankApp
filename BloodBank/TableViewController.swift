@@ -10,14 +10,21 @@ import UIKit
 
 class TableViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
     
+    
+    @IBOutlet weak var userLbl: UILabel!
+    
     @IBOutlet weak var tableView: UITableView!
     
     var users = AuthService.sharedInstance.users
+    
+    
+    var data: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        self.userLbl.text = data
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -34,6 +41,7 @@ class TableViewController: UIViewController,UITableViewDataSource, UITableViewDe
         
         cell.NameLbl.text = users[indexPath.row].email
         cell.bloodLbl.text = users[indexPath.row].bloodgroup
+        print(userLbl.text!)
         
         return cell
     }
